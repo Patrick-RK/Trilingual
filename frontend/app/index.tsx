@@ -10,14 +10,14 @@ export default function TabViewExample() {
   const [index, setIndex] = useState(0);
   const [routes] = useState([
     { key: 'first', title: '日本語' },
-    // { key: 'second', title: 'Francaise' },
-    // { key: 'third', title: 'Español' },
+    { key: 'second', title: 'Francaise' },
+    { key: 'third', title: 'Español' },
   ]);
 
   const renderScene = SceneMap({
     first: FirstRoute,
-    // second: SecondRoute,
-    // third: ThirdRoute,
+    second: SecondRoute,
+    third: ThirdRoute,
   });
 
   return (
